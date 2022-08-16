@@ -41,17 +41,45 @@
 
 // Вид 3.
 
-string Method3(int count, string c)
-{
-    int i = 0;
-    string result = String.Empty;
+// string Method3(int count, string c)
+// {
+//     int i = 0;
+//     string result = String.Empty;
 
-    while (i < count)
+//     while (i < count)
+//     {
+//         result = result + c;
+//         i++;
+//     }
+//     return result;
+// }
+// string res = Method3(10,"куку");
+// Console.WriteLine(res);
+
+
+// string Method3(int count, string c)
+// {
+//     string result = String.Empty;
+
+//     for (int i = 0; i < count; i++)               метод FOR используется при известном 
+//     {
+//         result = result + c;                  
+//     }                                       
+//     return result;
+// }
+// string res = Method3(10, "хаха");
+// Console.WriteLine(res);
+
+for (int i = 2; i <= 10; i++)
+{
+    for (int j = 2; j <= 10; j++)
     {
-        result = result + c;
-        i++;
+        Console.WriteLine($"{i}x{j}={i*j}");
     }
-    return result;
+     Console.WriteLine();
 }
-string res = Method3(10,"куку");
-Console.WriteLine(res);
+
+
+
+
+
