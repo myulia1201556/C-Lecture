@@ -7,15 +7,31 @@
 Console.WriteLine("Введите целое положительное число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
-int NumCount (int number);
-{
+// int NumCount (int number)
+// {
+// int sum = 0;
+// for (int i = 1; number > 0; i++)
+// {
+//     number = number/10;
+//     sum = i;
+// }
+// return sum;
+// }
+// int result = NumCount(num);
+// Console.WriteLine($"Количество цифр в числе {num} = {result}");
 
-int i = 0;
-for (int i=1; num>0; i++);
-{
-    num = num/10;
-}
-return i;
-}
-Console.WriteLine("Количество цифр в числе {num} = {i} ");
 
+
+int DigitofNums(int number)
+{
+    int count = 0;
+    if (number == 0) return 1;
+    while(number > 0)
+    {
+        count++;
+        number = number / 10;
+    }
+    return count;
+}
+int result = DigitofNums(num);
+Console.WriteLine($"Количество цифр в числе {num}: {result}");
