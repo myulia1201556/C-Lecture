@@ -13,7 +13,7 @@
 // {
 //     Console.WriteLine(msg);
 // }
-// // Method1("Текаст сообщения");
+// Method1("Текаст сообщения");
 
 
 // void Method11 (string msg, int count)
@@ -70,14 +70,14 @@
 // string res = Method3(10, "хаха");
 // Console.WriteLine(res);
 
-for (int i = 2; i <= 10; i++)
-{
-    for (int j = 2; j <= 10; j++)
-    {
-        Console.WriteLine($"{i}x{j}={i*j}");
-    }
-     Console.WriteLine();
-}
+// for (int i = 2; i <= 10; i++)
+// {
+//     for (int j = 2; j <= 10; j++)
+//     {
+//         Console.WriteLine($"{i}x{j}={i*j}");
+//     }
+//      Console.WriteLine();
+// }
 
 
 
