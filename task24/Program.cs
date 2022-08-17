@@ -8,17 +8,18 @@
 Console.WriteLine("Введите целое положительное число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
-int sum =0;
-for (int i = 1; i <= num; i++ );
-{
-    // sum = sum + i;
-    sum+ = i;
-}
-Console.WriteLine("Сумма чисел от 1 до {num} = {sum} ");
+// int sum = 0;
+// for (int i = 1; i <= num; i++ )
+// {
+//     // sum = sum + i;
+//     sum += i;
+// }
+// Console.WriteLine("Сумма чисел от 1 до {num} = {sum} ");
 
 int SumNumbers (int number)
 {
-    for (int i = 1; i <= number; i++ );
+    int sum = 0;
+    for (int i = 1; i <= number; i++ )
 {
     // sum = sum + i;
     sum += i;
@@ -26,4 +27,4 @@ int SumNumbers (int number)
 return sum;
 }
 int result = SumNumbers (num);
-Console.WriteLine("Сумма чисел от 1 до {num} = {result} ");
+Console.WriteLine($"Сумма чисел от 1 до {num} = {result} ");
