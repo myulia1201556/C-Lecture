@@ -43,17 +43,16 @@ int[] GetSumPosNegElem(int[] array)
 void PrintArray (int[] array)
 {
      Console.Write("[");
-
-    for (int i = 0; i < array.Length; i++)
+     for (int i = 0; i < array.Length; i++)
     {
-        if(i < PrintArray.Length - 1) Console.Write($"{array[i]}, ");
-        Console.Write(array[i]);
+        if(i < array.Length - 1) Console.Write($"{array[i]},");
+        else  Console.Write(array[i]);
     }
     Console.WriteLine("]");
 }
 
 int[] arr = CreateArrayRndInt(12, -9, 9);
 PrintArray(arr);
-int[] sumPosNegElem = GetSumPosNegElem(array);
-ConsoleWriteline($"Сумма отрицательных пременных = {sumPosNegEl[0]}");
-ConsoleWriteline($"Сумма отрицательных пременных = {sumPosNegEl[1]}");
+int[] sumPosNegElem = GetSumPosNegElem(arr);
+Console.WriteLine($"Сумма отрицательных пременных = {sumPosNegElem[0]}");
+Console.WriteLine($"Сумма положительных пременных = {sumPosNegElem[1]}");
