@@ -4,14 +4,27 @@
 // Если N = 3 -> 0 1 1
 // Если N = 7 -> 0 1 1 2 3 5 8
 
-Console.WriteLine("Введите число: ");
-int num = Convert.ToInt32(Console.ReadLine());
-int Fibonacci (int number)
+Console.WriteLine("Введите число");
+int num = int.Parse(Console.ReadLine());
+
+
+void GetFibonacci(int n)
 {
-    if (number == 1) return Console.WriteLine("{1}");
-    if (number == 2) return Console.WriteLine("{0, 1}");
-   for (int i = 0; i < number; i++)
-   {
-     Console.WriteLine("number");
-   }
+    int prevPrev = 0;
+    int prev = 1;
+
+
+    System.Console.Write($"{prevPrev} {prev} ");
+    for (int i = 3; i <= n; ++i)
+    {
+
+        int result = prev + prevPrev;
+        System.Console.Write(result + " ");
+        prevPrev = prev;
+        prev = result;
+    }
+
 }
+
+GetFibonacci(num);
+
