@@ -7,13 +7,13 @@
 // [1, 2, 3, 6, 2] -> 0
 // [10, 11, 12, 13, 14] -> 5
 
-int[] arr = CreateArrayRndInt(5, 0, 5);
+int[] arr = CreateArrayRndInt(12, 10, 99);
 
 PrintArray(arr);
 
-int cnt = CountInRange(arr, 10, 99);
+int count = CountInRange(arr, 10, 99);
 
-Console.WriteLine($" -> {cnt}");
+Console.WriteLine($" -> {count}");
 
 // Methods
 
